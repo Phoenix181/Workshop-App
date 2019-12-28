@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Listing"
+    tools:showIn="@layout/activity_listing">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_android_black_24dp"
+                app:layout_constraintStart_toStartOf="@id/cl1"
+                app:layout_constraintTop_toTopOf="@id/cl1" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl1"
+                app:layout_constraintStart_toEndOf="@id/product"
+                app:layout_constraintTop_toTopOf="@id/cl1" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintEnd_toEndOf="@id/cl1"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product"
+                app:layout_constraintEnd_toEndOf="@id/cl1"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price"
+                app:layout_constraintStart_toEndOf="@id/product"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl1"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl2"
+                app:layout_constraintTop_toTopOf="@id/cl2"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl2"
+                app:layout_constraintStart_toEndOf="@id/product1"
+                app:layout_constraintTop_toTopOf="@id/cl2" />
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product1"
+                app:layout_constraintTop_toBottomOf="@id/title1"
+                app:layout_constraintEnd_toEndOf="@id/cl2"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product1"
+                app:layout_constraintEnd_toEndOf="@id/cl2"
+                app:layout_constraintTop_toBottomOf="@id/description1"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price1"
+                app:layout_constraintStart_toEndOf="@id/product1"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl2"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl3"
+                app:layout_constraintTop_toTopOf="@id/cl3"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl3"
+                app:layout_constraintStart_toEndOf="@id/product2"
+                app:layout_constraintTop_toTopOf="@id/cl3" />
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product2"
+                app:layout_constraintTop_toBottomOf="@id/title2"
+                app:layout_constraintEnd_toEndOf="@id/cl3"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product2"
+                app:layout_constraintEnd_toEndOf="@id/cl3"
+                app:layout_constraintTop_toBottomOf="@id/description2"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price2"
+                app:layout_constraintStart_toEndOf="@id/product2"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl3"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl4"
+                app:layout_constraintTop_toTopOf="@id/cl4"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl4"
+                app:layout_constraintStart_toEndOf="@id/product3"
+                app:layout_constraintTop_toTopOf="@id/cl4" />
+
+            <TextView
+                android:id="@+id/description3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product3"
+                app:layout_constraintTop_toBottomOf="@id/title3"
+                app:layout_constraintEnd_toEndOf="@id/cl4"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product3"
+                app:layout_constraintEnd_toEndOf="@id/cl4"
+                app:layout_constraintTop_toBottomOf="@id/description3"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price3"
+                app:layout_constraintStart_toEndOf="@id/product3"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl4"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl5"
+                app:layout_constraintTop_toTopOf="@id/cl5"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl5"
+                app:layout_constraintStart_toEndOf="@id/product4"
+                app:layout_constraintTop_toTopOf="@id/cl5" />
+
+            <TextView
+                android:id="@+id/description4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product4"
+                app:layout_constraintTop_toBottomOf="@id/title4"
+                app:layout_constraintEnd_toEndOf="@id/cl5"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product4"
+                app:layout_constraintEnd_toEndOf="@id/cl5"
+                app:layout_constraintTop_toBottomOf="@id/description4"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price4"
+                app:layout_constraintStart_toEndOf="@id/product4"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl5"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl6"
+                app:layout_constraintTop_toTopOf="@id/cl6"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl6"
+                app:layout_constraintStart_toEndOf="@id/product5"
+                app:layout_constraintTop_toTopOf="@id/cl6" />
+
+            <TextView
+                android:id="@+id/description5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product5"
+                app:layout_constraintTop_toBottomOf="@id/title5"
+                app:layout_constraintEnd_toEndOf="@id/cl6"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product5"
+                app:layout_constraintEnd_toEndOf="@id/cl6"
+                app:layout_constraintTop_toBottomOf="@id/description5"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price5"
+                app:layout_constraintStart_toEndOf="@id/product5"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl6"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/product6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="@id/cl7"
+                app:layout_constraintTop_toTopOf="@id/cl7"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android x86_64 device"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@id/cl7"
+                app:layout_constraintStart_toEndOf="@id/product6"
+                app:layout_constraintTop_toTopOf="@id/cl7" />
+
+            <TextView
+                android:id="@+id/description6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product6"
+                app:layout_constraintTop_toBottomOf="@id/title6"
+                app:layout_constraintEnd_toEndOf="@id/cl7"
+                android:text="An device that has Android x64_64 Operating System maybe with an hardware."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Price6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/product6"
+                app:layout_constraintEnd_toEndOf="@id/cl7"
+                app:layout_constraintTop_toBottomOf="@id/description6"
+                android:text="$49.99"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <RatingBar
+                android:id="@+id/ratingBar6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Price6"
+                app:layout_constraintStart_toEndOf="@id/product6"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
